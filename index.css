@@ -340,7 +340,7 @@ body {
     justify-content: space-between;
 }
 
-.colleaction_btn {
+.colleaction__btn {
     background: rgba(255, 255, 255, 0.1); 
     border: none;
     color: white;
