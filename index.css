@@ -1,0 +1,464 @@
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"), url(assets/fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(90deg, #984D38 10%, #181E41 90%);
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.header__text {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    line-height: 37.5px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 37.5px;
+}
+
+.header__text__art {
+    color: #631ada;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__search__input {
+    border-radius: 10px; 
+    border: none;
+    background: #FFFFFF1A;
+    color: #FFFFFF50;
+    outline: none;
+    padding: 10px 20px 10px 40px;
+    font-size: 20x;
+    line-height: 30px;
+    width: 384px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.header__search__input::placeholder {
+    color: #FFFFFF50;
+}
+
+.header__search__icon {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 40px;
+}
+
+.header__menu__link {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header__menu__btn {
+    background-image: linear-gradient(214deg, #631ada 48%, #d75dff 100%); 
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 171px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.explore__section {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explore__info {
+    display: flex;
+    flex-direction: column;
+    width: 490px;
+}
+
+.explore__info__title {
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+.explore__info__description {
+    margin: 0;
+    margin-top: 10px;
+    color: var(--half-white, rgba(255, 255, 255, 0.50));
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.card_btn {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card__btn_exp {
+    background: rgba(255, 255, 255, 0.1); 
+    border: none;
+    color: white;
+    padding: 10px 20px; 
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px; 
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; 
+}
+
+.card__btn_exp:hover {
+    background: linear-gradient(214deg, #631ada 48%, #d75dff 100%); 
+} 
+
+.explorer__statistic {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.explorer__statistic__info {
+    text-align: center;
+}
+
+.explorer__statistic__number {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;    
+}
+
+.explorer__statistic__text {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #FFFFFF80;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 187px);
+    grid-template-rows: 140px 220px 127px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    gap: 15px;
+}
+
+.cherep {
+    border-radius: 10px;
+    width: 187px;
+    height: 140px;
+}
+
+.grafit {
+    border-radius: 10px;
+    width: 187px;
+    height: 108px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.sharik {
+    border-radius: 10px;
+    width: 187px;
+    height: 220px;
+}
+
+.mozg {
+    border-radius: 10px;
+    width: 187px;
+    height: 220px;
+    margin-top: -33px;
+}
+
+.fotik {
+    border-radius: 10px;
+    width: 187px;
+    height: 127px;
+}
+
+.zaec {
+    border-radius: 10px;
+    width: 179px;
+    height: 159px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: -33px;
+}
+
+.igra {
+    border-radius: 10px;
+    width: 187px;
+    height: 412px;
+    grid-row: 1/3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: 54px;
+}
+
+.sponsors {
+    display: flex;
+    gap: 154.49px;
+    margin-top: 150px;
+}
+
+.about__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.about__section__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about__section__title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.88px;
+    font-family: Roboto;
+}
+
+.about__section__description {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color:#FFFFFF80;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.popular {
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+}
+
+.aqua {
+    width: 490px;
+    height: 600px;
+    border-radius: 10px;
+    float: left;
+}
+
+.popular_text {
+    margin-left: 120px;
+    font-family: Poppins, sans-serif;
+}
+
+.populat__text1 {
+    height: 45px;
+    width: 244px;
+    text-align: left; 
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+.populat__text2 {
+    height: 288px;
+    width: 588px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    color:#FFFFFF80;
+    margin-bottom: 30px;
+}
+
+.colleaction_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 200px;
+}
+
+.colleaction_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.colleaction_btn {
+    background: rgba(255, 255, 255, 0.1); 
+    border: none;
+    color: white;
+    padding: 10px 20px; 
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px; 
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; 
+    margin-right: 15px;
+    width: 100%;
+}
+
+.colleaction_btn:last-child {
+    margin-right: 0px;
+}
+
+.colleaction_btn:hover {
+    background: linear-gradient(214deg, #631ada 48%, #d75dff 100%); 
+} 
+
+.card-list {
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 390px 390px 390px;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    gap: 15px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-list_item {
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF10;
+    padding: 26px;
+    border-radius: 10px;
+}
+
+.card-list_item:hover {
+    background: #FFFFFF80;
+}
+
+.card_price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.johny {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF80;
+}
+
+.Current_bid {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    text-align: right;
+    color: #FFFFFF80;
+}
+
+/* должно быть чуть ниже. Пока что для этого добавил паддинг */
+.Yellow_painting {
+    margin: 0;
+    margin-top: 10px; 
+    padding-top: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.price {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: right;
+    
+}
+
+
+.сard__price_btn {
+    background: rgba(255, 255, 255, 0.1); 
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; 
+    width: 337px;
+    height: 50px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 23px;
+    border-radius: 10px;
+}
+
+.сard__price_btn:hover {
+    background: linear-gradient(214deg, #631ada 48%, #d75dff 100%); 
+} 
